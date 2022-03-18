@@ -1,0 +1,8 @@
+.startButton{
+    background-color: #943463;
+    border-radius: 1rem;
+    border: .25rem;
+    border-style: solid;
+    padding: .5rem 1rem .5rem 1rem;
+    font-size: 1rem;
+}
