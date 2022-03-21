@@ -20,7 +20,6 @@
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-evenly;
-    font-family: 'Audiowide';
     color: #E4FDE1;
 }
 ul li {
@@ -29,11 +28,43 @@ ul li {
     height: 86px;
     border: 1px solid #400142;
     margin-top: 10px;
-    text-align: center;
-    font-size: 2rem;
+    
     padding-top: 3rem;
 }
 
+/*Place image parts*/
+.r-1c-1 {
+    background-image: url(Images/SplitPuzzle9/row-1-column-1.jpg);
+    background-size: cover;
+}
+.r-1c-2 {
+    background-image: url(Images/SplitPuzzle9/row-1-column-2.jpg);
+    background-size: cover;
+}
+.r-1c-3 {
+    background-image: url(Images/SplitPuzzle9/row-1-column-3.jpg);
+    background-size: cover;
+}
+.r-2c-1 {
+    background-image: url(Images/SplitPuzzle9/row-2-column-1.jpg);
+    background-size: cover;
+}
+.r-2c-2 {
+    background-image: url(Images/SplitPuzzle9/row-2-column-2.jpg);
+    background-size: cover;
+}
+.r-2c-3 {
+    background-image: url(Images/SplitPuzzle9/row-2-column-3.jpg);
+    background-size: cover;
+}
+.r-3c-1 {
+    background-image: url(Images/SplitPuzzle9/row-3-column-1.jpg);
+    background-size: cover;
+}
+.r-3c-2 {
+    background-image: url(Images/SplitPuzzle9/row-3-column-2.jpg);
+    background-size: cover;
+}
 
 @media screen and (min-width: 500px){
     #container{
