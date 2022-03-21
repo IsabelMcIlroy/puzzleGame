@@ -1,9 +1,9 @@
-* {
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body {
+body{
     display: flex;
     background-color: #fffbee;
     text-align: center;
@@ -21,7 +21,7 @@ h1{
 /*Top Bar*/
 .topBar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 button{
     padding: .5rem 1rem .5rem 1rem;
@@ -29,10 +29,10 @@ button{
     background-color: #563225;
     color: #d2e2ff; 
 }
-.startButton {
+.startButton{
     border-color: #d2e2ff;
 }
-.timer {
+.timer{
     padding: .5rem 1rem .5rem 1rem;
     background-color: #563225;
     color: #d2e2ff;
@@ -73,20 +73,21 @@ button{
 }
 
 /*Puzzle area*/
-#container {
+#container{
     width: 300px;
     height: 300px;
     background: #fffbee;
     background-image: url(Images/puzzleBoard.svg);
-    margin: 10px auto;
-}ul {
+    
+}
+ul{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     justify-content: space-evenly;
     color: #fffbee;
 }
-ul li {
+ul li{
     background: #fffbee;
     width: 30%;
     height: 86px;
@@ -96,35 +97,35 @@ ul li {
 }
 
 /*Place image parts*/
-.r-1c-1 {
+.r-1c-1{
     background-image: url(Images/SplitPuzzle9/row-1-column-1.jpg);
     background-size: cover;
 }
-.r-1c-2 {
+.r-1c-2{
     background-image: url(Images/SplitPuzzle9/row-1-column-2.jpg);
     background-size: cover;
 }
-.r-1c-3 {
+.r-1c-3{
     background-image: url(Images/SplitPuzzle9/row-1-column-3.jpg);
     background-size: cover;
 }
-.r-2c-1 {
+.r-2c-1{
     background-image: url(Images/SplitPuzzle9/row-2-column-1.jpg);
     background-size: cover;
 }
-.r-2c-2 {
+.r-2c-2{
     background-image: url(Images/SplitPuzzle9/row-2-column-2.jpg);
     background-size: cover;
 }
-.r-2c-3 {
+.r-2c-3{
     background-image: url(Images/SplitPuzzle9/row-2-column-3.jpg);
     background-size: cover;
 }
-.r-3c-1 {
+.r-3c-1{
     background-image: url(Images/SplitPuzzle9/row-3-column-1.jpg);
     background-size: cover;
 }
-.r-3c-2 {
+.r-3c-2{
     background-image: url(Images/SplitPuzzle9/row-3-column-2.jpg);
     background-size: cover;
 }
@@ -134,7 +135,7 @@ ul li {
         width: 500px;
         height: 500px;
     }
-    ul li {
+    ul li{
         height: 150px;
     }
 }
