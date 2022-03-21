@@ -14,7 +14,10 @@ body {
     margin: 10px auto;
     padding: 1rem;
 }
-
+h1{
+    font-family: Poppins, sans-serif;
+    color: #563225;
+}
 /*Top Bar*/
 .topBar{
     display: flex;
@@ -56,7 +59,7 @@ button{
     justify-content: space-evenly;
 }
 .selected{
-    background-color: #f0a2f4;
+    background-color: #d2e2ff;
     color: #563225;
     width: 70%;
 }
@@ -87,7 +90,7 @@ ul li {
     background: #fffbee;
     width: 30%;
     height: 86px;
-    border: 1px solid #f0a2f4;
+    border: 1px solid #d2e2ff;
     margin-top: 10px;
     padding-top: 3rem;
 }
