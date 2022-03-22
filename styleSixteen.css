@@ -83,8 +83,8 @@ ul{
 }
 ul li{
     background: #fffbee;
-    width: 30%;
-    height: 86px;
+    width: 22%;
+    height: 60px;
     border: 1px solid #d2e2ff;
     margin-top: 10px;
     padding-top: 3rem;
@@ -92,35 +92,66 @@ ul li{
 
 /*Place image parts*/
 .r-1c-1{
-    background-image: url(Images/SplitPuzzle9/row-1-column-1.jpg);
+    background-image: url(Images/SplitPuzzle16/row-1-column-1.jpg);
     background-size: cover;
 }
 .r-1c-2{
-    background-image: url(Images/SplitPuzzle9/row-1-column-2.jpg);
+    background-image: url(Images/SplitPuzzle16/row-1-column-2.jpg);
     background-size: cover;
 }
 .r-1c-3{
-    background-image: url(Images/SplitPuzzle9/row-1-column-3.jpg);
+    background-image: url(Images/SplitPuzzle16/row-1-column-3.jpg);
     background-size: cover;
 }
+.r-1c-4{
+    background-image: url(Images/SplitPuzzle16/row-1-column-4.jpg);
+    background-size: cover;
+}
+
 .r-2c-1{
-    background-image: url(Images/SplitPuzzle9/row-2-column-1.jpg);
+    background-image: url(Images/SplitPuzzle16/row-2-column-1.jpg);
     background-size: cover;
 }
 .r-2c-2{
-    background-image: url(Images/SplitPuzzle9/row-2-column-2.jpg);
+    background-image: url(Images/SplitPuzzle16/row-2-column-2.jpg);
     background-size: cover;
 }
 .r-2c-3{
-    background-image: url(Images/SplitPuzzle9/row-2-column-3.jpg);
+    background-image: url(Images/SplitPuzzle16/row-2-column-3.jpg);
     background-size: cover;
 }
+.r-2c-4{
+    background-image: url(Images/SplitPuzzle16/row-2-column-4.jpg);
+    background-size: cover;
+}
+
 .r-3c-1{
-    background-image: url(Images/SplitPuzzle9/row-3-column-1.jpg);
+    background-image: url(Images/SplitPuzzle16/row-3-column-1.jpg);
     background-size: cover;
 }
 .r-3c-2{
-    background-image: url(Images/SplitPuzzle9/row-3-column-2.jpg);
+    background-image: url(Images/SplitPuzzle16/row-3-column-2.jpg);
+    background-size: cover;
+}
+.r-3c-3{
+    background-image: url(Images/SplitPuzzle16/row-3-column-3.jpg);
+    background-size: cover;
+}
+.r-3c-4{
+    background-image: url(Images/SplitPuzzle16/row-3-column-4.jpg);
+    background-size: cover;
+}
+
+.r-4c-1{
+    background-image: url(Images/SplitPuzzle16/row-4-column-1.jpg);
+    background-size: cover;
+}
+.r-4c-2{
+    background-image: url(Images/SplitPuzzle16/row-4-column-2.jpg);
+    background-size: cover;
+}
+.r-4c-3{
+    background-image: url(Images/SplitPuzzle16/row-4-column-3.jpg);
     background-size: cover;
 }
 
