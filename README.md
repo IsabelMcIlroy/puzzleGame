@@ -7,4 +7,4 @@
 # Demo Site
 https://isabelmcilroy.github.io/puzzleGame/
 
-![Screenshot](Images/Capture.jpg.jpg)
+![Screenshot](Images/Capture.jpg)
