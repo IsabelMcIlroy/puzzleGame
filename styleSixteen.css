@@ -168,6 +168,7 @@ ul li{
     background-color: #d2e2ff;
     color: #563225;
     width: 70%;
+    font-weight: bold;
 }
 .unselected{
     width: 30%;
