@@ -29,8 +29,13 @@ button{
     background-color: #563225;
     color: #d2e2ff; 
 }
-.startButton{
+.pauseButton{
     border-color: #d2e2ff;
+    border-radius: 2rem;
+}
+.restartButton{
+    border-color: #d2e2ff;
+    border-radius: 2rem;
 }
 .timer{
     padding: .5rem 1rem .5rem 1rem;
@@ -43,12 +48,16 @@ button{
     border-width: .13rem;
 }
 
-.startButton:hover{
+.pauseButton:hover{
     background-color: #d2e2ff;
     color: #563225;
     font-weight: bold;
 }
-
+.restartButton:hover{
+    background-color: #d2e2ff;
+    color: #563225;
+    font-weight: bold;
+}
 button a{
     text-decoration: none;
     color:#d2e2ff;
