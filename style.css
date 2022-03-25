@@ -34,7 +34,7 @@ button{
     border-color: #d2e2ff;
     border-radius: 2rem;
 }
-.restartButton{
+.startButton{
     border-color: #d2e2ff;
     border-radius: 2rem;
 }
@@ -52,7 +52,7 @@ button{
     color: #563225;
     font-weight: bold;
 }
-.restartButton:hover{
+.startButton:hover{
     background-color: #d2e2ff;
     color: #563225;
     font-weight: bold;
