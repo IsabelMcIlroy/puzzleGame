@@ -70,7 +70,7 @@ pauseButton.addEventListener('click', (e) => {
 })
 
 
-// Stops timer
+// Pause timer
 function pauseTimer() {
     clearInterval(timerInterval);
 }
