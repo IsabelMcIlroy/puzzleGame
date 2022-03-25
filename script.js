@@ -1,7 +1,6 @@
 
 let timerInterval,
-elapsedTime = 0
-
+    elapsedTime = 0
 
 // Start Button 
 
@@ -62,8 +61,16 @@ pauseButton.addEventListener('click', (e) => {
     e.preventDefault();
     if(pauseButton.innerText=="Pause"){
        pauseButton.innerText="Resume";
+       pauseTimer()
       }
     else{
       pauseButton.innerText="Pause";
+      startTimer()
       }    
 })
+
+
+// Stops timer
+function pauseTimer() {
+    clearInterval(timerInterval);
+}
