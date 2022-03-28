@@ -78,7 +78,7 @@ function pauseTimer() {
 // Shuffle Pieces
 // Select the list items
 let ul = document.querySelectorAll('li');;
-const images = ["Images/SplitPuzzle9/row-1-column-1.jpg", "Images/SplitPuzzle9/row-1-column-2.jpg", "Images/SplitPuzzle9/row-1-column-3.jpg", "Images/SplitPuzzle9/row-2-column-1.jpg", "Images/SplitPuzzle9/row-2-column-2.jpg", "Images/SplitPuzzle9/row-2-column-3.jpg", "Images/SplitPuzzle9/row-3-column-1.jpg", "Images/SplitPuzzle9/row-3-column-2.jpg"];
+const images = [A, B, C, D, E, F, G, H];
 
 // this function sets a unique id for each list item, in the form 'li0' to 'li8'
 const setId = (items) => {
