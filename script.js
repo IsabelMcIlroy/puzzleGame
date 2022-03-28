@@ -91,7 +91,7 @@ const fillGrid = (items, images) =>{
     let shuffled = shuffle(images);
 
     items.forEach((item, i) => {
-        item.innerHtml = shuffled[i];
+        item.innerHTML = shuffled[i];
     })
 }
 
