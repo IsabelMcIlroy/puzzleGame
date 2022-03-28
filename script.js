@@ -13,7 +13,7 @@ startButton.addEventListener('click', (e) => {
       }
       resetTimer();
       startTimer();
-      shuffle();    
+      fillGrid(ul, images);    
 })
 
 // Start timer at beginning of game
@@ -78,7 +78,7 @@ function pauseTimer() {
 // Shuffle Pieces
 // Select the list items
 let ul = document.querySelectorAll('li');;
-const images = [A, B, C, D, E, F, G, H];
+const images = ["A", "B", "C", "D", "E", "F", "G", "H", ""];
 
 // this function sets a unique id for each list item, in the form 'li0' to 'li8'
 const setId = (items) => {
@@ -88,12 +88,12 @@ const setId = (items) => {
 }
 
 const fillGrid = (items, images) =>{
+    let shuffled = shuffle(images);
+
     items.forEach((item, i) => {
-        item.innerHTML = images[i];
+        item.innerHtml = shuffled[i];
     })
 }
-
-fillGrid(ul, images);
 
 // shuffle the array
 const shuffle = (arr) => {
