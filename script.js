@@ -12,9 +12,9 @@ startButton.addEventListener('click', (e) => {
        startButton.innerText="Restart";
       }
       resetTimer();
-      startTimer();    
+      startTimer();
+      shuffle();    
 })
-
 
 // Start timer at beginning of game
 function startTimer() {
@@ -73,4 +73,38 @@ pauseButton.addEventListener('click', (e) => {
 // Pause timer
 function pauseTimer() {
     clearInterval(timerInterval);
+}
+
+// Shuffle Pieces
+// Select the list items
+let ul = document.querySelectorAll('li');;
+const images = ["Images/SplitPuzzle9/row-1-column-1.jpg", "Images/SplitPuzzle9/row-1-column-2.jpg", "Images/SplitPuzzle9/row-1-column-3.jpg", "Images/SplitPuzzle9/row-2-column-1.jpg", "Images/SplitPuzzle9/row-2-column-2.jpg", "Images/SplitPuzzle9/row-2-column-3.jpg", "Images/SplitPuzzle9/row-3-column-1.jpg", "Images/SplitPuzzle9/row-3-column-2.jpg"];
+
+// this function sets a unique id for each list item, in the form 'li0' to 'li8'
+const setId = (items) => {
+    for(let i=0; i < items.length; i++){
+        items[i].setAttribute("id", `li${i}`)
+    }
+}
+
+const fillGrid = (items, images) =>{
+    items.forEach((item, i) => {
+        item.innerHTML = images[i];
+    })
+}
+
+fillGrid(ul, images);
+
+// shuffle the array
+const shuffle = (arr) => {
+    const copy = [...arr];
+    // loop over the array
+    for(let i = 0; i < copy.length; i++) {
+        let j = parseInt(Math.random()*copy.length);
+        // swap elements at i and j
+        let temp = copy[i];
+        copy[i] = copy[j];
+        copy[j] = temp;
+    }
+    return copy;
 }
