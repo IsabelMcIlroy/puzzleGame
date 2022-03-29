@@ -78,7 +78,7 @@ function pauseTimer() {
 // Shuffle Pieces
 // Select the list items
 let ul = document.querySelectorAll('li');;
-const images = new images[8];
+let images = [];
 
 images[0] = load("Images/SplitPuzzle9/row-1-column-1.jpg");
 images[1] = load("Images/SplitPuzzle9/row-1-column-2.jpg");
