@@ -86,6 +86,10 @@ ul li{
     background-image: url(Images/SplitPuzzle16/row-4-column-3.jpg);
     background-size: cover;
 }
+.empty{
+    background-color: #fffbee;
+    border: .5rem solid #d2e2ff;
+}
 
 @media screen and (min-width: 500px){
     #container{
