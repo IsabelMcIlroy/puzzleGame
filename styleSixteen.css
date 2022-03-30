@@ -88,7 +88,8 @@ ul li{
 }
 .empty{
     background-color: #fffbee;
-    border: .5rem solid #d2e2ff;
+    border: .25rem solid #d2e2ff;
+    opacity: .2;
 }
 
 @media screen and (min-width: 500px){
