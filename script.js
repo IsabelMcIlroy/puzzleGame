@@ -78,16 +78,8 @@ function pauseTimer() {
 // Shuffle Pieces
 // Select the list items
 let ul = document.querySelectorAll('li');;
-let images = [];
+const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","r-3c-2","empty"];
 
-images[0] = load("Images/SplitPuzzle9/row-1-column-1.jpg");
-images[1] = load("Images/SplitPuzzle9/row-1-column-2.jpg");
-images[2] = load("Images/SplitPuzzle9/row-1-column-3.jpg");
-images[3] = load("Images/SplitPuzzle9/row-2-column-1.jpg");
-images[4] = load("Images/SplitPuzzle9/row-2-column-2.jpg");
-images[5] = load("Images/SplitPuzzle9/row-2-column-3.jpg");
-images[6] = load("Images/SplitPuzzle9/row-3-column-1.jpg");
-images[7] = load("Images/SplitPuzzle9/row-3-column-2.jpg");
 
 // this function sets a unique id for each list item, in the form 'li0' to 'li8'
 const setId = (items) => {
@@ -100,7 +92,7 @@ const fillGrid = (items, images) =>{
     let shuffled = shuffle(images);
 
     items.forEach((item, i) => {
-        item.innerHTML = shuffled[i];
+        item.className = shuffled[i];
     })
 }
 

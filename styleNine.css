@@ -56,6 +56,11 @@ ul li{
     background-size: cover;
 }
 
+.empty{
+    background-color: #fffbee;
+    border: .5rem solid #d2e2ff;
+}
+
 @media screen and (min-width: 500px){
     #container{
         width: 500px;
