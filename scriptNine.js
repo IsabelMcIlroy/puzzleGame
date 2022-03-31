@@ -104,3 +104,12 @@ const shuffle = (arr) => {
 
 // Make pieces movable
 
+function switchPiece(className) {
+    let tile = document.getElementByClass();
+    if (tile!="empty") { 
+           if (document.getElementByClass().className=="empty") {
+             swapTiles(className);
+             return;
+           } 
+    }
+  }
