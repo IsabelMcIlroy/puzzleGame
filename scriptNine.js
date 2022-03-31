@@ -80,14 +80,6 @@ function pauseTimer() {
 let ul = document.querySelectorAll('li');;
 const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","r-3c-2","empty"];
 
-
-// this function sets a unique id for each list item, in the form 'li0' to 'li8'
-const setId = (items) => {
-    for(let i=0; i < items.length; i++){
-        items[i].setAttribute("id", `li${i}`)
-    }
-}
-
 const fillGrid = (items, images) =>{
     let shuffled = shuffle(images);
 
@@ -111,10 +103,4 @@ const shuffle = (arr) => {
 }
 
 // Make pieces movable
-const pieces = document.querySelectorAll('.puzzlePiece');
 
-pieces.addEventListener('dragstart', dragStart);
-
-function dragStart(){
-    console.log('drag Start');
-}
