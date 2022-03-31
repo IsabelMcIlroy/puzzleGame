@@ -109,3 +109,12 @@ const shuffle = (arr) => {
     }
     return copy;
 }
+
+// Make pieces movable
+const pieces = document.querySelectorAll('.puzzlePiece');
+
+pieces.addEventListener('dragstart', dragStart);
+
+function dragStart(){
+    console.log('drag Start');
+}
