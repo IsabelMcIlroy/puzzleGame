@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styleTwentyFive.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">  
+
+    <title>Puzzle Game!</title>
+</head>
+<body>
+    <h1>Out of this world puzzle!</h1>
+    <!--Puzzle Board Background-->
+    <div class="puzzleBoard">
+        <!--Top Bar-->
+        <div class="topBar">
+            <!--Start/Restart btn-->
+            <button class="startButton" id="startButton">Start</button>
+            <!--Pause/Resume btn-->
+            <button class="pauseButton" id="pauseButton">Pause</button>
+            <!--Timer-->
+            <div class="timer" id="display">0:00</div>
+            <div class="fullPuzzle">
+                <a href="#">? 
+                    <span>
+                        <img src="Images/fullTwentyFivePuzzle.svg" alt="full puzzle image" height="100">
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--Puzzle Board-->
+        <div id="container">
+             <ul>
+                <li class="r-1c-1" id="Piece11" onclick="switchPiece(1,1);"></li>
+                <li class="r-1c-2" id="Piece12" onclick="switchPiece(1,2);"></li>
+                <li class="r-1c-3" id="Piece13" onclick="switchPiece(1,3);"></li>
+                <li class="r-1c-4" id="Piece14" onclick="switchPiece(1,4);"></li>
+                <li class="r-1c-5" id="Piece15" onclick="switchPiece(1,5);"></li>
+
+                <li class="r-2c-1" id="Piece21" onclick="switchPiece(2,1);"></li>
+                <li class="r-2c-2" id="Piece22" onclick="switchPiece(2,2);"></li>
+                <li class="r-2c-3" id="Piece23" onclick="switchPiece(2,3);"></li>
+                <li class="r-2c-4" id="Piece24" onclick="switchPiece(2,4);"></li>
+                <li class="r-2c-5" id="Piece25" onclick="switchPiece(2,5);"></li>
+
+                <li class="r-3c-1" id="Piece31" onclick="switchPiece(3,1);"></li>
+                <li class="r-3c-2" id="Piece32" onclick="switchPiece(3,2);"></li>
+                <li class="r-3c-3" id="Piece33" onclick="switchPiece(3,3);"></li>
+                <li class="r-3c-4" id="Piece34" onclick="switchPiece(3,4);"></li>
+                <li class="r-3c-5" id="Piece35" onclick="switchPiece(3,5);"></li>
+
+                <li class="r-4c-1" id="Piece41" onclick="switchPiece(4,1);"></li>
+                <li class="r-4c-2" id="Piece42" onclick="switchPiece(4,2);"></li>
+                <li class="r-4c-3" id="Piece43" onclick="switchPiece(4,3);"></li>
+                <li class="r-4c-4" id="Piece44" onclick="switchPiece(4,4);"></li>
+                <li class="r-4c-5" id="Piece45" onclick="switchPiece(4,5);"></li>
+
+                <li class="r-5c-1" id="Piece51" onclick="switchPiece(5,1);"></li>
+                <li class="r-5c-2" id="Piece52" onclick="switchPiece(5,2);"></li>
+                <li class="r-5c-3" id="Piece53" onclick="switchPiece(5,3);"></li>
+                <li class="r-5c-4" id="Piece54" onclick="switchPiece(5,4);"></li>
+                <li class="empty" id="Piece55" onclick="switchPiece(5,5);"></li>
+            </ul>
+        </div>
+        <!--Difficulty Selctor-->  
+        <div class="difficulty">
+            <button class="unselected">
+                <a href="index.html">
+                   Easy 
+                </a>
+            </button>
+            <button class="unselected">
+                <a href="sixteenPiecePuzzle.html">
+                     Hard
+                </a>
+            </button>
+            <button class="selected">Impossible! </button>
+             
+        </div>
+    </div>
+    
+    <script src="scriptTwentyFive.js"></script>
+
+</body>
+</html>

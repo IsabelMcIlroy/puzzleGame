@@ -1,0 +1,140 @@
+
+/*Puzzle area*/
+#container{
+    width: 300px;
+    height: 300px;
+    background: #fffbee;
+    background-image: url(Images/puzzleBoard.svg);
+    
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-evenly;
+    color: #fffbee;
+}
+ul li{
+    background: #fffbee;
+    width: 17%;
+    height: 48px;
+    border: 1px solid #d2e2ff;
+    margin-top: 10px;
+}
+
+/*Place image parts*/
+.r-1c-1{
+    background-image: url(Images/SplitPuzzle25/row-1-column-1.jpg);
+    background-size: cover;
+}
+.r-1c-2{
+    background-image: url(Images/SplitPuzzle25/row-1-column-2.jpg);
+    background-size: cover;
+}
+.r-1c-3{
+    background-image: url(Images/SplitPuzzle25/row-1-column-3.jpg);
+    background-size: cover;
+}
+.r-1c-4{
+    background-image: url(Images/SplitPuzzle25/row-1-column-4.jpg);
+    background-size: cover;
+}
+.r-1c-5{
+    background-image: url(Images/SplitPuzzle25/row-1-column-5.jpg);
+    background-size: cover;
+}
+
+.r-2c-1{
+    background-image: url(Images/SplitPuzzle25/row-2-column-1.jpg);
+    background-size: cover;
+}
+.r-2c-2{
+    background-image: url(Images/SplitPuzzle25/row-2-column-2.jpg);
+    background-size: cover;
+}
+.r-2c-3{
+    background-image: url(Images/SplitPuzzle25/row-2-column-3.jpg);
+    background-size: cover;
+}
+.r-2c-4{
+    background-image: url(Images/SplitPuzzle25/row-2-column-4.jpg);
+    background-size: cover;
+}
+.r-2c-5{
+    background-image: url(Images/SplitPuzzle25/row-2-column-5.jpg);
+    background-size: cover;
+}
+
+.r-3c-1{
+    background-image: url(Images/SplitPuzzle25/row-3-column-1.jpg);
+    background-size: cover;
+}
+.r-3c-2{
+    background-image: url(Images/SplitPuzzle25/row-3-column-2.jpg);
+    background-size: cover;
+}
+.r-3c-3{
+    background-image: url(Images/SplitPuzzle25/row-3-column-3.jpg);
+    background-size: cover;
+}
+.r-3c-4{
+    background-image: url(Images/SplitPuzzle25/row-3-column-4.jpg);
+    background-size: cover;
+}
+.r-3c-5{
+    background-image: url(Images/SplitPuzzle25/row-3-column-5.jpg);
+    background-size: cover;
+}
+
+.r-4c-1{
+    background-image: url(Images/SplitPuzzle25/row-4-column-1.jpg);
+    background-size: cover;
+}
+.r-4c-2{
+    background-image: url(Images/SplitPuzzle25/row-4-column-2.jpg);
+    background-size: cover;
+}
+.r-4c-3{
+    background-image: url(Images/SplitPuzzle25/row-4-column-3.jpg);
+    background-size: cover;
+}
+.r-4c-4{
+    background-image: url(Images/SplitPuzzle25/row-4-column-4.jpg);
+    background-size: cover;
+}
+.r-4c-5{
+    background-image: url(Images/SplitPuzzle25/row-4-column-5.jpg);
+    background-size: cover;
+}
+
+.r-5c-1{
+    background-image: url(Images/SplitPuzzle25/row-5-column-1.jpg);
+    background-size: cover;
+}
+.r-5c-2{
+    background-image: url(Images/SplitPuzzle25/row-5-column-2.jpg);
+    background-size: cover;
+}
+.r-5c-3{
+    background-image: url(Images/SplitPuzzle25/row-5-column-3.jpg);
+    background-size: cover;
+}
+.r-5c-4{
+    background-image: url(Images/SplitPuzzle25/row-5-column-4.jpg);
+    background-size: cover;
+}
+.empty{
+    background-color: #fffbee;
+    border: .25rem solid #d2e2ff;
+    opacity: .2;
+}
+
+@media screen and (min-width: 500px){
+    #container{
+        width: 500px;
+        height: 500px;
+    }
+    ul li{
+        height: 86px;
+    }
+}
