@@ -101,3 +101,46 @@ for(let i = 0; i < copy.length; i++) {
 }
 return copy;
 }
+
+// Make pieces movable
+function swapTiles(piece1,piece2) {
+    var temp = document.getElementById(piece1).className;
+    document.getElementById(piece1).className = document.getElementById(piece2).className;
+    document.getElementById(piece2).className = temp;
+  }
+
+function switchPiece(row,column) {
+    var Piece = document.getElementById("Piece"+row+column);
+    var tile = Piece.className;
+    if (tile!="empty") { 
+         //Checking if white tile on the right
+         if (column<4) {
+           if ( document.getElementById("Piece"+row+(column+1)).className=="empty") {
+             swapTiles("Piece"+row+column,"Piece"+row+(column+1));
+             return;
+           }
+         }
+         //Checking if white tile on the left
+         if (column>1) {
+           if ( document.getElementById("Piece"+row+(column-1)).className=="empty") {
+             swapTiles("Piece"+row+column,"Piece"+row+(column-1));
+             return;
+           }
+         }
+           //Checking if white tile is above
+         if (row>1) {
+           if ( document.getElementById("Piece"+(row-1)+column).className=="empty") {
+             swapTiles("Piece"+row+column,"Piece"+(row-1)+column);
+             return;
+           }
+         }
+         //Checking if white tile is below
+         if (row<4) {
+           if ( document.getElementById("Piece"+(row+1)+column).className=="empty") {
+             swapTiles("Piece"+row+column,"Piece"+(row+1)+column);
+             return;
+           }
+         } 
+    }
+    
+  }
