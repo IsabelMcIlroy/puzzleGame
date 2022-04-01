@@ -112,7 +112,7 @@ button a:active{
 .selected{
     background-color: #d2e2ff;
     color: #563225;
-    width: 70%;
+    width: 60%;
     font-weight: bold;
 }
 .unselected{
