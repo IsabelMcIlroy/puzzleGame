@@ -65,7 +65,7 @@ button a{
 button a:hover{
     color:#563225; 
 }
-button a:visted{
+button a:visited{
     text-decoration: none;
 }
 button a:link{
@@ -73,6 +73,32 @@ button a:link{
 }
 button a:active{
     text-decoration: none;
+}
+
+/* help - hover full puzzle image*/
+.fullPuzzle{
+    padding: .5rem 1rem .5rem 1rem;
+    background-color: #563225;
+    color: #d2e2ff;
+    border-radius: 1rem;
+    text-align: center;
+    border: .13rem solid #d2e2ff;
+}
+.fullPuzzle a{
+    position: relative;
+    text-decoration: none;
+    color: #d2e2ff;
+}
+.fullPuzzle a span{
+    position: absolute;
+    display: none;
+    z-index: 99;
+}
+.fullPuzzle a:hover span{
+    display: block;
+}
+.fullPuzzle a:active span{
+    display: block;
 }
 
 /*difficulty selctor*/
