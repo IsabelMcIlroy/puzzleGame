@@ -116,7 +116,7 @@ button a:active{
     font-weight: bold;
 }
 .unselected{
-    width: 30%;
+    width: 40%;
 }
 .unselected:hover{
     background-color: #d2e2ff;
