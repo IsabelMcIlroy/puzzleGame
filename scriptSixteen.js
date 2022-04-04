@@ -11,9 +11,13 @@ e.preventDefault();
 if(startButton.innerText=="Start"){
    startButton.innerText="Restart";
   }
-  resetTimer();
-  startTimer();
-  fillGrid(ul, images);    
+if(pauseButton.innerText=="Resume"){
+    pauseButton.innerText="Pause";
+    pauseTimer()
+    }
+resetTimer();
+startTimer();
+fillGrid(ul, images);    
 })
 
 // Start timer at beginning of game
