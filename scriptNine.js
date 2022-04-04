@@ -148,4 +148,38 @@ function switchPiece(row,column) {
     }
     
   }
-  
+
+// Winning the game
+
+function isFinished() {
+    if(ul.className = images){
+       showModal();
+      }
+}
+
+const showModal = () => {
+    getFinalTime();
+    document.getElementById('message').innerText = "Yahoo you did it!"
+    document.getElementById('time').innerText = `${timeMessage}`;
+    document.getElementById('modal').classList.remove("hide");
+
+}
+
+const hideModal = () => {
+    document.getElementById('modal').classList.add("hide");
+}
+
+function getFinalTime(){
+    let diffInMin = elapsedTime/60000;
+    let mins = Math.floor(diffInMin);
+    let diffInSec = (diffInMin - mins) * 60;
+    let secs = diffInSec.toFixed(1);
+    if(mins > 1) {
+        timeMessage = `${mins} minute and ${secs} seconds`;
+    } else if(mins > 0) {
+        timeMessage = `${mins} minutes and ${secs} seconds`;
+    } else {
+        timeMessage = `${secs} seconds`;
+    }
+    return timeMessage;
+}

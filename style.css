@@ -124,6 +124,47 @@ button a:active{
     font-weight: bold;
 }
 
+/* Modal styles */
+#modal {
+    width: 80%;
+    height: 400px;
+    background: #456990;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: Poppins, sans-serif;
+    border: .5rem double #563225;
+    border-radius: 2rem;
+}
+
+#modal #message {
+    color: #d2e2ff;
+    margin: 0;
+    font-size: 2rem;
+}
+
+#modal #time{
+    color: #d2e2ff;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.hide {
+    display: none;
+}
+#modal #header {
+    text-align: right;
+    padding: 5px 10px;
+}
+#modal #header button {
+    padding: 10px;
+    border: 0px;
+    background: #456990;
+    color: #d2e2ff;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 500px){
     .startButton{
         padding: .5rem 1rem .5rem 1rem;

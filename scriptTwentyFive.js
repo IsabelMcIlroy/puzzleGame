@@ -148,3 +148,21 @@ function switchPiece(row,column) {
     }
     
   }
+
+  // Winning the game
+
+function isFinished() {
+    if(ul.className = images){
+       showModal();
+      }
+}
+
+const showModal = () => {
+    document.getElementById('message').innerText = "You Won!";
+    document.getElementById('modal').classList.remove("hide");
+
+}
+
+const hideModal = () => {
+    document.getElementById('modal').classList.add("hide");
+}
