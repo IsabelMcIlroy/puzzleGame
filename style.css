@@ -25,7 +25,7 @@ h1{
     justify-content: space-between;
 }
 button{
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .25rem;
     border-radius: .8rem;
     background-color: #563225;
     color: #d2e2ff; 
@@ -36,13 +36,13 @@ button{
 }
 .startButton{
     border-color: #d2e2ff;
-    border-radius: 2rem;
+    border-radius: 1.6rem;
 }
 .timer{
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .5rem .75rem .5rem .75rem;
     background-color: #563225;
     color: #d2e2ff;
-    border-radius: 1rem;
+    border-radius: .8rem;
     text-align: center;
     border: .13rem solid #d2e2ff;
 }
@@ -77,10 +77,10 @@ button a:active{
 
 /* help - hover full puzzle image*/
 .fullPuzzle{
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .5rem .75rem .5rem .75rem;
     background-color: #563225;
     color: #d2e2ff;
-    border-radius: 1rem;
+    border-radius: .8rem;
     text-align: center;
     border: .13rem solid #d2e2ff;
 }
@@ -122,4 +122,13 @@ button a:active{
     background-color: #d2e2ff;
     color: #563225;
     font-weight: bold;
+}
+
+@media screen and (min-width: 500px){
+    .startButton{
+        padding: .5rem 1rem .5rem 1rem;
+    }
+    .pauseButton{
+        padding: .5rem 1rem .5rem 1rem;
+    }
 }
