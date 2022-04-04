@@ -152,7 +152,9 @@ function switchPiece(row,column) {
 // Winning the game
 
 function isFinished() {
-    if(ul.className = images){
+    if(
+        //
+    ){
        showModal();
       }
 }
