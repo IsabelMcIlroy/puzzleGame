@@ -81,7 +81,7 @@ function pauseTimer() {
 
 // Shuffle Pieces
 // Select the list items
-let ul = document.querySelectorAll('li');;
+let ul = document.querySelectorAll('li');
 const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","r-3c-2","empty"];
 
 const fillGrid = (items, images) =>{
@@ -111,6 +111,7 @@ function swapTiles(piece1,piece2) {
     var temp = document.getElementById(piece1).className;
     document.getElementById(piece1).className = document.getElementById(piece2).className;
     document.getElementById(piece2).className = temp;
+    isFinished();
   }
 
 function switchPiece(row,column) {
@@ -149,13 +150,15 @@ function switchPiece(row,column) {
     
   }
 
-// Winning the game
+// Winning the game 
 
 function isFinished() {
-    let currentOrder = []
-    
+    const currentPieces = document.querySelectorAll('li');
+    const currentClassesOrder = [... currentPieces].map((p)=> p.className);
+    console.log(images.toString());
+    console.log(currentClassesOrder.toString());
     if(
-        images = currentOrder
+        images.toString() == currentClassesOrder.toString()
     ){
        showModal();
       }
