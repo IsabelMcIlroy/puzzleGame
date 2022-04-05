@@ -159,6 +159,7 @@ function switchPiece(row,column) {
         images.toString() == currentClassesOrder.toString()
     ){
        showModal();
+       pauseTimer();
       }
 }
 

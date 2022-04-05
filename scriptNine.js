@@ -158,6 +158,7 @@ function isFinished() {
         images.toString() == currentClassesOrder.toString()
     ){
        showModal();
+       pauseTimer();
       }
 }
 
