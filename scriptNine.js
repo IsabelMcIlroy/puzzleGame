@@ -146,8 +146,7 @@ function switchPiece(row,column) {
              return;
            }
          } 
-    }
-    
+    }  
   }
 
 // Winning the game 

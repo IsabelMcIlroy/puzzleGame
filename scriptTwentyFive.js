@@ -111,6 +111,7 @@ function swapTiles(piece1,piece2) {
     var temp = document.getElementById(piece1).className;
     document.getElementById(piece1).className = document.getElementById(piece2).className;
     document.getElementById(piece2).className = temp;
+    isFinished();
   }
 
 function switchPiece(row,column) {
@@ -151,18 +152,40 @@ function switchPiece(row,column) {
 
   // Winning the game
 
-function isFinished() {
-    if(ul.className = images){
+  function isFinished() {
+    const currentPieces = document.querySelectorAll('li');
+    const currentClassesOrder = [... currentPieces].map((p)=> p.className);
+    console.log(images.toString());
+    console.log(currentClassesOrder.toString());
+    if(
+        images.toString() == currentClassesOrder.toString()
+    ){
        showModal();
       }
 }
 
 const showModal = () => {
-    document.getElementById('message').innerText = "You Won!";
+    getFinalTime();
+    document.getElementById('message').innerText = "Yahoo you did it!"
+    document.getElementById('time').innerText = `${timeMessage}`;
     document.getElementById('modal').classList.remove("hide");
-
 }
 
 const hideModal = () => {
     document.getElementById('modal').classList.add("hide");
+}
+
+function getFinalTime(){
+    let diffInMin = elapsedTime/60000;
+    let mins = Math.floor(diffInMin);
+    let diffInSec = (diffInMin - mins) * 60;
+    let secs = diffInSec.toFixed(1);
+    if(mins > 1) {
+        timeMessage = `${mins} minute and ${secs} seconds`;
+    } else if(mins > 0) {
+        timeMessage = `${mins} minutes and ${secs} seconds`;
+    } else {
+        timeMessage = `${secs} seconds`;
+    }
+    return timeMessage;
 }
