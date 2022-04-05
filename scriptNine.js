@@ -152,8 +152,10 @@ function switchPiece(row,column) {
 // Winning the game
 
 function isFinished() {
+    let currentOrder = []
+    
     if(
-        //
+        images = currentOrder
     ){
        showModal();
       }
