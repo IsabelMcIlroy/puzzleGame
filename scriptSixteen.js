@@ -155,8 +155,6 @@ function switchPiece(row,column) {
   function isFinished() {
     const currentPieces = document.querySelectorAll('li');
     const currentClassesOrder = [... currentPieces].map((p)=> p.className);
-    console.log(images.toString());
-    console.log(currentClassesOrder.toString());
     if(
         images.toString() == currentClassesOrder.toString()
     ){
