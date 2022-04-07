@@ -3,7 +3,6 @@ let timerInterval,
     elapsedTime = 0
 
 // Start Button 
-
 const startButton = document.getElementById('startButton');  
 
 startButton.addEventListener('click', (e) => {
@@ -17,7 +16,7 @@ startButton.addEventListener('click', (e) => {
         }
     resetTimer();
     startTimer();
-    fillGrid(ul, images);    
+    fillGrid(ul, images);
 })
 
 // Start timer at beginning of game
@@ -33,7 +32,6 @@ function startTimer() {
 function print(txt) {
     document.getElementById("display").innerHTML = txt;
 }
-
 
 // Resets timer to 0 at beginning of game
 function resetTimer(){
@@ -58,7 +56,6 @@ function timeToString(time) {
 }
 
 // Pause Button 
-
 const pauseButton = document.getElementById('pauseButton');  
 
 pauseButton.addEventListener('click', (e) => {
@@ -72,7 +69,6 @@ pauseButton.addEventListener('click', (e) => {
       startTimer()
       }    
 })
-
 
 // Pause timer
 function pauseTimer() {
@@ -150,7 +146,6 @@ function switchPiece(row,column) {
   }
 
 // Winning the game 
-
 function isFinished() {
     const currentPieces = document.querySelectorAll('li');
     const currentClassesOrder = [... currentPieces].map((p)=> p.className);

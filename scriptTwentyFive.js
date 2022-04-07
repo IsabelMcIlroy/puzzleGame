@@ -3,7 +3,6 @@ let timerInterval,
 elapsedTime = 0
 
 // Start Button 
-
 const startButton = document.getElementById('startButton');  
 
 startButton.addEventListener('click', (e) => {
@@ -34,7 +33,6 @@ function print(txt) {
 document.getElementById("display").innerHTML = txt;
 }
 
-
 // Resets timer to 0 at beginning of game
 function resetTimer(){
 clearInterval(timerInterval);
@@ -58,7 +56,6 @@ return `${formattedMM}:${formattedSS}`;
 }
 
 // Pause Button 
-
 const pauseButton = document.getElementById('pauseButton');  
 
 pauseButton.addEventListener('click', (e) => {
@@ -72,7 +69,6 @@ else{
   startTimer()
   }    
 })
-
 
 // Pause timer
 function pauseTimer() {
@@ -151,7 +147,6 @@ function switchPiece(row,column) {
   }
 
   // Winning the game
-
   function isFinished() {
     const currentPieces = document.querySelectorAll('li');
     const currentClassesOrder = [... currentPieces].map((p)=> p.className);
