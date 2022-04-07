@@ -80,14 +80,6 @@ function pauseTimer() {
 let ul = document.querySelectorAll('li');
 const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","r-3c-2","empty"];
 
-const fillGrid = (items, images) =>{
-    let shuffled = shuffle(images);
-
-    items.forEach((item, i) => {
-        item.className = shuffled[i];
-    })
-}
-
 // shuffle the array
 const shuffle = (arr) => {
     const copy = [...arr];
@@ -101,6 +93,54 @@ const shuffle = (arr) => {
     }
     return copy;
 }
+
+// check if puzzle is solvable
+const tileCount = 9;
+const boardParts = images.keys();
+
+function countInversions(i, j) {
+    let inversions = 0;
+    let tileNum = j * tileCount + i;
+    let lastTile = tileCount * tileCount;
+    let tileValue = boardParts[i][j].y * tileCount + boardParts[i][j].x;
+    for (let q = tileNum + 1; q < lastTile; ++q) {
+      let k = q % tileCount;
+      let l = Math.floor(q / tileCount);
+  
+      let compValue = boardParts[k][l].y * tileCount + boardParts[k][l].x;
+      if (tileValue > compValue && tileValue != (lastTile - 1)) {
+        ++inversions;
+      }
+    }
+    return inversions;
+  }
+
+function sumInversions() {
+  let inversions = 0;
+  for (let j = 0; j < tileCount; ++j) {
+    for (let i = 0; i < tileCount; ++i) {
+      inversions += countInversions(i, j);
+    }
+  }
+  return inversions;
+}
+function isSolvable() {
+  return (sumInversions() % 2 == 0)
+}
+
+// Fill in the puzzle pieces
+ const fillGrid = (items, images) =>{
+     if (!isSolvable) {
+         let shuffled = shuffle(images);
+        items.forEach((item, i) => {
+        item.className = shuffled[i];
+ })
+ 
+ } else {
+     shuffle();
+ }}
+ 
+
 
 // Make pieces movable
 function swapTiles(piece1,piece2) {
