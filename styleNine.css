@@ -23,6 +23,7 @@ ul li{
 }
 
 /*Place image parts*/
+/*row 1 pieces*/
 .r-1c-1{
     background-image: url(Images/SplitPuzzle9/row-1-column-1.jpg);
     background-size: cover;
@@ -35,6 +36,7 @@ ul li{
     background-image: url(Images/SplitPuzzle9/row-1-column-3.jpg);
     background-size: cover;
 }
+/*row 2 pieces*/
 .r-2c-1{
     background-image: url(Images/SplitPuzzle9/row-2-column-1.jpg);
     background-size: cover;
@@ -47,6 +49,7 @@ ul li{
     background-image: url(Images/SplitPuzzle9/row-2-column-3.jpg);
     background-size: cover;
 }
+/*row 3 pieces*/
 .r-3c-1{
     background-image: url(Images/SplitPuzzle9/row-3-column-1.jpg);
     background-size: cover;
@@ -55,13 +58,13 @@ ul li{
     background-image: url(Images/SplitPuzzle9/row-3-column-2.jpg);
     background-size: cover;
 }
-
 .empty{
     background-color: #fffbee;
     border: .25rem solid #d2e2ff;
     opacity: .2;
 }
 
+/*Media Query to increase sizes for nonmobile*/
 @media screen and (min-width: 500px){
     #container{
         width: 500px;

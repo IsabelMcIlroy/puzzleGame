@@ -46,7 +46,6 @@ button{
     text-align: center;
     border: .13rem solid #d2e2ff;
 }
-
 .pauseButton:hover{
     background-color: #d2e2ff;
     color: #563225;
@@ -57,7 +56,6 @@ button{
     color: #563225;
     font-weight: bold;
 }
-
 button a{
     text-decoration: none;
     color:#d2e2ff;
@@ -137,19 +135,16 @@ button a:active{
     border: .5rem double #563225;
     border-radius: 2rem;
 }
-
 #modal #message {
     color: #d2e2ff;
     margin: 0;
     font-size: 2rem;
 }
-
 #modal #time{
     color: #d2e2ff;
     margin: 0;
     font-size: 1rem;
 }
-
 .hide {
     display: none;
 }
@@ -165,6 +160,7 @@ button a:active{
     cursor: pointer;
 }
 
+/* Media Query - make padding large on non mobile screens*/
 @media screen and (min-width: 500px){
     .startButton{
         padding: .5rem 1rem .5rem 1rem;
