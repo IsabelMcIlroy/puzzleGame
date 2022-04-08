@@ -87,6 +87,7 @@ function randomIntFromInterval(min, max) { // min and max included
   
 
   const shuffle = (arr) => {
+    copy = [...arr]
     const rndInt = randomIntFromInterval(1, 4)
     console.log(rndInt)
     if (rndInt == 4) {
