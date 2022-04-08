@@ -83,24 +83,23 @@ const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
-  const rndInt = randomIntFromInterval(1, 4)
-  console.log(rndInt)
+  
 
   const shuffle = (arr) => {
-    let copy = [...arr];
+    const rndInt = randomIntFromInterval(1, 4)
+    console.log(rndInt)
     if (rndInt == 4) {
-    let copy = ['r-2c-3', 'r-3c-2', 'r-2c-2', 'r-1c-2', 'empty', 'r-3c-1', 'r-1c-1', 'r-2c-1', 'r-1c-3'];
+    return copy = ['r-2c-1', 'r-1c-1', 'r-1c-2', 'r-3c-1', 'empty', 'r-1c-3', 'r-3c-2', 'r-2c-2', 'r-2c-3'];
     }
     else if (rndInt == 3) {
-    let copy = ['empty', 'r-1c-3', 'r-2c-3', 'r-2c-1', 'r-3c-1', 'r-3c-2', 'r-1c-2', 'r-2c-2', 'r-1c-1'];
+    return copy = ['empty', 'r-3c-1', 'r-1c-2', 'r-3c-2', 'r-2c-1', 'r-1c-1', 'r-2c-2', 'r-2c-3', 'r-1c-3'];
     }
     else if (rndInt == 2) {
-    let copy = ['r-2c-1', 'empty', 'r-1c-3', 'r-1c-1', 'r-2c-2', 'r-1c-2', 'r-1c-2', 'r-2c-2', 'r-1c-1'];
+    return copy = ['r-3c-1', 'r-2c-1', 'r-1c-2', 'r-3c-2', 'r-1c-1', 'r-1c-3', 'r-2c-2', 'r-2c-3', 'empty'];
     }
     else () => {
-    let copy = ['r-1c-2', 'r-1c-1', 'r-2c-3', 'r-3c-1', 'r-2c-1', 'r-1c-3', 'empty', 'r-2c-2', 'r-3c-2'];
+    return copy = ['r-3c-2', 'r-3c-1', 'r-1c-2', 'r-2c-2', 'r-2c-1', 'r-1c-1', 'r-2c-3', 'empty', 'r-1c-3'];
     }
-    return copy;
 }
 
 const fillGrid = (items, images) =>{
