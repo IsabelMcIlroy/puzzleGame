@@ -90,7 +90,8 @@ button a:active{
 .fullPuzzle a span{
     position: absolute;
     display: none;
-    z-index: 99;
+    top: 0;
+    right: 0;
 }
 .fullPuzzle a:hover span{
     display: block;
