@@ -80,25 +80,36 @@ function pauseTimer() {
 let ul = document.querySelectorAll('li');
 const images = ["r-1c-1","r-1c-2","r-1c-3","r-2c-1","r-2c-2","r-2c-3","r-3c-1","r-3c-2","empty"];
 // shuffle the array
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  const rndInt = randomIntFromInterval(1, 4)
+  console.log(rndInt)
+
+  const shuffle = (arr) => {
+    const copy = [...arr];
+    if (rndInt == 4) {
+    let copy = ['r-2c-3', 'r-3c-2', 'r-2c-2', 'r-1c-2', 'empty', 'r-3c-1', 'r-1c-1', 'r-2c-1', 'r-1c-3'];
+    }
+    else if (rndInt == 3) {
+    let copy = ['empty', 'r-1c-3', 'r-2c-3', 'r-2c-1', 'r-3c-1', 'r-3c-2', 'r-1c-2', 'r-2c-2', 'r-1c-1'];
+    }
+    else if (rndInt == 2) {
+    let copy = ['r-2c-1', 'empty', 'r-1c-3', 'r-1c-1', 'r-2c-2', 'r-1c-2', 'r-1c-2', 'r-2c-2', 'r-1c-1'];
+    }
+    else () => {
+    let copy = ['r-1c-2', 'r-1c-1', 'r-2c-3', 'r-3c-1', 'r-2c-1', 'r-1c-3', 'empty', 'r-2c-2', 'r-3c-2'];
+    }
+    return copy;
+}
+
 const fillGrid = (items, images) =>{
     let shuffled = shuffle(images);
-    
+    console.log(shuffled);
     items.forEach((item, i) => {
         item.className = shuffled[i];
     })
     }
-const shuffle = (arr) => {
-    const copy = [...arr];
-    // loop over the array
-    for(let i = 0; i < copy.length; i++) {
-        let j = parseInt(Math.random()*copy.length);
-        // swap elements at i and j
-        let temp = copy[i];
-        copy[i] = copy[j];
-        copy[j] = temp;
-    }
-    return copy;
-}
 
 // Make pieces movable
 function swapTiles(piece1,piece2) {
