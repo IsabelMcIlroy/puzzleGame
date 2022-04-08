@@ -97,8 +97,11 @@ function randomIntFromInterval(min, max) { // min and max included
     else if (rndInt == 2) {
     return copy = ['r-3c-1', 'r-2c-1', 'r-1c-2', 'r-3c-2', 'r-1c-1', 'r-1c-3', 'r-2c-2', 'r-2c-3', 'empty'];
     }
-    else () => {
+    else if (rndInt == 1) {
     return copy = ['r-3c-2', 'r-3c-1', 'r-1c-2', 'r-2c-2', 'r-2c-1', 'r-1c-1', 'r-2c-3', 'empty', 'r-1c-3'];
+    }
+    else () => {
+        shuffle();
     }
 }
 

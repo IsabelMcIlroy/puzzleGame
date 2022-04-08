@@ -80,27 +80,39 @@ clearInterval(timerInterval);
 let ul = document.querySelectorAll('li');;
 const images = ["r-1c-1","r-1c-2","r-1c-3","r-1c-4","r-2c-1","r-2c-2","r-2c-3","r-2c-4","r-3c-1","r-3c-2","r-3c-3","r-3c-4","r-4c-1","r-4c-2","r-4c-3","empty"];
 
-const fillGrid = (items, images) =>{
-let shuffled = shuffle(images);
-
-items.forEach((item, i) => {
-    item.className = shuffled[i];
-})
-}
-
 // shuffle the array
-const shuffle = (arr) => {
-const copy = [...arr];
-// loop over the array
-for(let i = 0; i < copy.length; i++) {
-    let j = parseInt(Math.random()*copy.length);
-    // swap elements at i and j
-    let temp = copy[i];
-    copy[i] = copy[j];
-    copy[j] = temp;
+function randomIntFromInterval(min, max) { // min and max included 
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
+  
+
+  const shuffle = (arr) => {
+    const rndInt = randomIntFromInterval(1, 4)
+    console.log(rndInt)
+    if (rndInt == 4) {
+    return copy = ["r-2c-1","r-1c-1","r-1c-2","empty","r-2c-2","r-2c-3","r-1c-4","r-1c-3","r-3c-2","r-3c-3","r-3c-4","r-2c-4","r-3c-1","r-4c-1","r-4c-2","r-4c-3"];
+    }
+    else if (rndInt == 3) {
+    return copy = ["r-2c-2","r-2c-1","r-1c-4","r-1c-2","r-3c-2","r-1c-1","r-3c-4","r-1c-3","r-3c-1","r-2c-3","r-4c-2","r-2c-4","empty","r-3c-3","r-4c-1","r-4c-3"];
+    }
+    else if (rndInt == 2) {
+    return copy = ["r-2c-2","r-3c-4","r-2c-1","r-1c-2","r-1c-1","r-3c-1","r-1c-4","r-1c-3","r-3c-2","r-4c-2","r-4c-1","r-2c-4","r-3c-3","r-2c-3","r-4c-3","empty"];
+    }
+    else if (rndInt == 1) {
+    return copy = ["r-1c-1","r-2c-2","r-1c-2","empty","r-3c-2","r-3c-4","r-2c-1","r-1c-3","r-4c-2","r-2c-3","r-3c-1","r-4c-1","r-3c-3","r-4c-3","r-1c-4","r-2c-4"];
+    }
+    else () => {
+        shuffle();
+    }
 }
-return copy;
-}
+
+const fillGrid = (items, images) =>{
+    let shuffled = shuffle(images);
+    console.log(shuffled);
+    items.forEach((item, i) => {
+        item.className = shuffled[i];
+    })
+    }
 
 // Make pieces movable
 function swapTiles(piece1,piece2) {
