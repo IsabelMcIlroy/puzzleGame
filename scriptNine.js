@@ -103,8 +103,8 @@ function randomIntFromInterval(min, max) { // min and max included
     return copy;
 }
 
-const fillGrid = (items, copy) =>{
-    let shuffled = shuffle(copy);
+const fillGrid = (items, images) =>{
+    let shuffled = shuffle(images);
     console.log(shuffled);
     items.forEach((item, i) => {
         item.className = shuffled[i];
