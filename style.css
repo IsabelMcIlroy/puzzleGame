@@ -45,16 +45,15 @@ button{
     border-radius: .8rem;
     text-align: center;
     border: .13rem solid #d2e2ff;
+    width: 70px;
 }
 .pauseButton:hover{
     background-color: #d2e2ff;
     color: #563225;
-    font-weight: bold;
 }
 .startButton:hover{
     background-color: #d2e2ff;
     color: #563225;
-    font-weight: bold;
 }
 button a{
     text-decoration: none;
